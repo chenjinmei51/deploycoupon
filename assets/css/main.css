@@ -2274,24 +2274,4 @@ button,
     padding-top: 0; }
 
 
-/* ✅ 品牌 logo 图片替换 icon 的统一样式 */
-.icon.brand-logo {
-  background: none;            /* 去掉默认圆形背景 */
-  border-radius: 0;            /* 不再需要圆形边框 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon.brand-logo img {
-  width: 70px;                 /* 控制 logo 尺寸 */
-  height: auto;
-  object-fit: contain;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.icon.brand-logo img:hover {
-  transform: scale(1.05);
-}
 
