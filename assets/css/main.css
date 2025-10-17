@@ -4,6 +4,7 @@
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2271,3 +2272,26 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+
+/* ✅ 品牌 logo 图片替换 icon 的统一样式 */
+.icon.brand-logo {
+  background: none;            /* 去掉默认圆形背景 */
+  border-radius: 0;            /* 不再需要圆形边框 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon.brand-logo img {
+  width: 70px;                 /* 控制 logo 尺寸 */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.icon.brand-logo img:hover {
+  transform: scale(1.05);
+}
+
