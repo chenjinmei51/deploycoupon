@@ -2284,38 +2284,82 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-<!-- 🟩 1. Banner -->
-<section id="banner">
-  <!-- 图片在上 -->
-  <div class="image-wrapper">
-    <img src="/images/brand/halfdaytravel/halfday-travel-banner.webp"
-         alt="Halfday Travel – Smart Minimalist Luggage, Garment Duffel Bags & Verified Discount Codes 2025"
-         loading="eager" />
-  </div>
+/* 🟩 Banner (image on top, consistent with other sections) */
+#banner {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1.5rem;
+}
 
-  <!-- 标题与正文保持 section 样式 -->
-  <header class="major">
-    <h1>Halfday Travel – Smart Minimalist Luggage & Verified Discount Codes (2025)</h1>
-  </header>
+#banner .image-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 1.5rem;
+}
 
-  <p style="font-size:15px; color:#333; line-height:1.7;">
-    <strong>Halfday Travel</strong> is a modern travel brand known for its <strong>smart, minimalist luggage</strong> 
-    and <strong>functional travel bags</strong> designed to simplify packing for everyday explorers.  
-    Their signature <strong>Garment Duffel Bag</strong> and <strong>Carry-On Garment Roller</strong> combine 
-    durability with timeless design — making every trip easier, lighter, and more organized.
-  </p>
+#banner .image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
 
-  <p style="font-size:15px; color:#333; line-height:1.7;">
-    Explore verified 
-    <a href="/halfdaytravel/halfday-travel-discount-code.html"><strong>Halfday Travel Discount Codes</strong></a> 
-    and real <a href="/halfdaytravel/halfday-travel-reviews.html"><strong>brand reviews</strong></a> 
-    to shop confidently and save smart in 2025.
-  </p>
+#banner h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #111;
+  margin-bottom: 1rem;
+}
 
-  <ul class="actions">
-    <li><a href="/halfdaytravel/halfday-travel-discount-code.html" class="button big">Get 15% OFF Discount Code</a></li>
-  </ul>
-</section>
+#banner p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+#banner .actions {
+  margin-top: 1.5rem;
+}
+
+#banner .button.big {
+  background-color: #222;
+  color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#banner .button.big:hover {
+  background-color: #444;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  #banner {
+    padding: 0 1rem;
+  }
+
+  #banner h1 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  #banner p {
+    font-size: 0.95rem;
+  }
+
+  #banner .button.big {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}
+
 
 
 
