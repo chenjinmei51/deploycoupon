@@ -2284,127 +2284,39 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-/* ===========================
-   Banner Section – Image on Top
-   =========================== */
-#banner.image-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  background-color: #fff;
-}
+<!-- 🟩 1. Banner -->
+<section id="banner">
+  <!-- 图片在上 -->
+  <div class="image-wrapper">
+    <img src="/images/brand/halfdaytravel/halfday-travel-banner.webp"
+         alt="Halfday Travel – Smart Minimalist Luggage, Garment Duffel Bags & Verified Discount Codes 2025"
+         loading="eager" />
+  </div>
 
-/* 🖼️ Image Section */
-#banner.image-top .image {
-  width: 100%;
-  max-width: 1200px;
-}
+  <!-- 标题与正文保持 section 样式 -->
+  <header class="major">
+    <h1>Halfday Travel – Smart Minimalist Luggage & Verified Discount Codes (2025)</h1>
+  </header>
 
-#banner.image-top img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 14px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-}
+  <p style="font-size:15px; color:#333; line-height:1.7;">
+    <strong>Halfday Travel</strong> is a modern travel brand known for its <strong>smart, minimalist luggage</strong> 
+    and <strong>functional travel bags</strong> designed to simplify packing for everyday explorers.  
+    Their signature <strong>Garment Duffel Bag</strong> and <strong>Carry-On Garment Roller</strong> combine 
+    durability with timeless design — making every trip easier, lighter, and more organized.
+  </p>
 
-/* 📝 Content Section */
-#banner.image-top .content {
-  max-width: 820px;
-  margin: 2rem auto 0 auto;
-  padding: 0 1.5rem;
-}
+  <p style="font-size:15px; color:#333; line-height:1.7;">
+    Explore verified 
+    <a href="/halfdaytravel/halfday-travel-discount-code.html"><strong>Halfday Travel Discount Codes</strong></a> 
+    and real <a href="/halfdaytravel/halfday-travel-reviews.html"><strong>brand reviews</strong></a> 
+    to shop confidently and save smart in 2025.
+  </p>
 
-#banner.image-top h1 {
-  font-size: 2.4rem;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
-  font-weight: 700;
-  color: #222;
-}
+  <ul class="actions">
+    <li><a href="/halfdaytravel/halfday-travel-discount-code.html" class="button big">Get 15% OFF Discount Code</a></li>
+  </ul>
+</section>
 
-#banner.image-top p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #333;
-  margin-bottom: 1.2rem;
-}
-
-/* 🔘 Button Section */
-#banner.image-top .actions {
-  margin-top: 1.5rem;
-}
-
-#banner.image-top .button.big {
-  font-size: 1rem;
-  padding: 0.85rem 2rem;
-  border-radius: 6px;
-  background-color: #222;
-  color: #fff;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-#banner.image-top .button.big:hover {
-  background-color: #444;
-}
-
-/* ===========================
-   Responsive: Mobile
-   =========================== */
-@media (max-width: 768px) {
-  #banner.image-top {
-    padding: 1.5rem 0.75rem;
-  }
-
-  #banner.image-top .image img {
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  #banner.image-top .content {
-    padding: 0 1rem;
-    margin-top: 1.25rem;
-  }
-
-  #banner.image-top h1 {
-    font-size: 1.75rem;
-    line-height: 1.3;
-  }
-
-  #banner.image-top p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  #banner.image-top .button.big {
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.9rem;
-    border-radius: 8px;
-  }
-}
-
-/* ===========================
-   Responsive: Very Small Screens (≤480px)
-   =========================== */
-@media (max-width: 480px) {
-  #banner.image-top h1 {
-    font-size: 1.5rem;
-    line-height: 1.25;
-  }
-
-  #banner.image-top p {
-    font-size: 0.9rem;
-  }
-
-  #banner.image-top .actions {
-    margin-top: 1.2rem;
-  }
-}
 
 
 
