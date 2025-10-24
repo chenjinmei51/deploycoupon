@@ -1,4 +1,4 @@
-# robots.txt for https://deploycoupon.com/
+# robots.txt for https://deploycoupons.com/
 # Last updated: 2025-10-23
 
 User-agent: *
@@ -18,4 +18,4 @@ Disallow: /*?query=
 Disallow: /*?s=
 
 # ✅ Sitemap location
-Sitemap: https://deploycoupon.com/sitemap.xml
+Sitemap: https://deploycoupons.com/sitemap.xml
