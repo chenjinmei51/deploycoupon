@@ -4,43 +4,43 @@
 
   <!-- 1. Core Pages -->
   <url>
-    <loc>https://deploycoupon.com/</loc>
+    <loc>https://deploycoupons.com/</loc>
   </url>
 
   <url>
-    <loc>https://deploycoupon.com/about.html</loc>
+    <loc>https://deploycoupons.com/about.html</loc>
   </url>
   <url>
-    <loc>https://deploycoupon.com/contact.html</loc>
+    <loc>https://deploycoupons.com/contact.html</loc>
   </url>
 
   <!-- 2. Brand Category -->
   <url>
-    <loc>https://deploycoupon.com/brands/</loc>
+    <loc>https://deploycoupons.com/brands/</loc>
   </url>
 
   <!-- 3. Halfday Travel Brand Pages -->
   <url>
-    <loc>https://deploycoupon.com/halfdaytravel/</loc>
+    <loc>https://deploycoupons.com/halfdaytravel/</loc>
   </url>
   <url>
-    <loc>https://deploycoupon.com/halfdaytravel/halfday-travel-discount-code.html</loc>
+    <loc>https://deploycoupons.com/halfdaytravel/halfday-travel-discount-code.html</loc>
   </url>
 
 
 
   <!-- 4. Legal Pages -->
   <url>
-    <loc>https://deploycoupon.com/privacy.html</loc>
+    <loc>https://deploycoupons.com/privacy.html</loc>
   </url>
   <url>
-    <loc>https://deploycoupon.com/terms.html</loc>
+    <loc>https://deploycoupons.com/terms.html</loc>
   </url>
   <url>
-    <loc>https://deploycoupon.com/disclaimer.html</loc>
+    <loc>https://deploycoupons.com/disclaimer.html</loc>
   </url>
   <url>
-    <loc>https://deploycoupon.com/disclosure.html</loc>
+    <loc>https://deploycoupons.com/disclosure.html</loc>
   </url>
 
 </urlset>
