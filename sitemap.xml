@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 1. Core Pages -->
+  <url>
+    <loc>https://deploycoupon.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://deploycoupon.com/about.html</loc>
+  </url>
+  <url>
+    <loc>https://deploycoupon.com/contact.html</loc>
+  </url>
+
+  <!-- 2. Brand Category -->
+  <url>
+    <loc>https://deploycoupon.com/brands/</loc>
+  </url>
+
+  <!-- 3. Halfday Travel Brand Pages -->
+  <url>
+    <loc>https://deploycoupon.com/halfdaytravel/</loc>
+  </url>
+  <url>
+    <loc>https://deploycoupon.com/halfdaytravel/halfday-travel-discount-code.html</loc>
+  </url>
+
+
+
+  <!-- 4. Legal Pages -->
+  <url>
+    <loc>https://deploycoupon.com/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://deploycoupon.com/terms.html</loc>
+  </url>
+  <url>
+    <loc>https://deploycoupon.com/disclaimer.html</loc>
+  </url>
+  <url>
+    <loc>https://deploycoupon.com/disclosure.html</loc>
+  </url>
+
+</urlset>
