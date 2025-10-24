@@ -1,0 +1,21 @@
+# robots.txt for https://deploycoupon.com/
+# Last updated: 2025-10-23
+
+User-agent: *
+# ✅ Allow all public pages
+Allow: /
+
+# ❌ Disallow private or technical directories
+Disallow: /assets/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /scripts/
+Disallow: /admin/
+Disallow: /drafts/
+
+# ✅ Block search result or internal query pages if any
+Disallow: /*?query=
+Disallow: /*?s=
+
+# ✅ Sitemap location
+Sitemap: https://deploycoupon.com/sitemap.xml
