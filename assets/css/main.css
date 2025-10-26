@@ -2285,6 +2285,48 @@ button,
     padding-top: 0; }
 
 
+<!-- 📱 Responsive Table CSS -->
+<style>
+@media (max-width: 640px) {
+  .rtable.rtable-nutrafol thead {
+    display: none;
+  }
+  .rtable.rtable-nutrafol,
+  .rtable.rtable-nutrafol tbody,
+  .rtable.rtable-nutrafol tr,
+  .rtable.rtable-nutrafol td {
+    display: block;
+    width: 100%;
+  }
+  .rtable.rtable-nutrafol tr {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    padding: 8px 10px;
+  }
+  .rtable.rtable-nutrafol td {
+    padding: 8px 10px;
+    position: relative;
+  }
+  .rtable.rtable-nutrafol td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    display: block;
+    color: #111;
+    margin-bottom: 4px;
+  }
+  .rtable.rtable-nutrafol td + td {
+    border-top: 1px dashed #eee;
+    margin-top: 6px;
+    padding-top: 12px;
+  }
+}
+</style>
+
+
+
 
 
 
