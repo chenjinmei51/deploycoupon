@@ -509,57 +509,59 @@
   Choose the plan that fits your goals — all subscriptions include <strong>free U.S. shipping</strong> and up to <strong>20% savings</strong>.
 </p>
 
-<div class="rtable rtable-nutrafol" style="overflow-x:auto; margin-top:16px;">
-  <table style="width:100%; border-collapse:separate; border-spacing:0 16px; font-size:15px; color:#333;">
+<div class="pricing-table-wrapper" style="margin-top:20px;">
+  <table class="pricing-table">
     <thead>
-      <tr style="background-color:#f7f7f7;">
-        <th style="text-align:left; padding:14px; border-radius:8px 0 0 8px;">Plan Type</th>
-        <th style="text-align:left; padding:14px;">Discount</th>
-        <th style="text-align:left; padding:14px;">Original</th>
-        <th style="text-align:left; padding:14px;">You Pay</th>
-        <th style="text-align:left; padding:14px; border-radius:0 8px 8px 0;">Details</th>
+      <tr>
+        <th>Plan Type</th>
+        <th>Discount</th>
+        <th>Original</th>
+        <th>You Pay</th>
+        <th>Details</th>
       </tr>
     </thead>
     <tbody>
 
       <!-- Buy Once -->
-      <tr class="pricing-card" style="background:#fff; border:2px solid #ccc; border-radius:10px; box-shadow:0 2px 4px rgba(0,0,0,0.03);">
-        <td data-label="Plan Type" style="padding:16px; font-weight:600;">Buy Once</td>
-        <td data-label="Discount" style="padding:16px;">—</td>
-        <td data-label="Original" style="padding:16px;">$88</td>
-        <td data-label="You Pay" style="padding:16px;"><strong>$88</strong></td>
-        <td data-label="Details" style="padding:16px;">One-time payment + <strong>$6.95 shipping</strong></td>
+      <tr class="card grey-card">
+        <td><span class="label">Buy Once</span></td>
+        <td>—</td>
+        <td>$88</td>
+        <td><strong>$88</strong></td>
+        <td>One-time payment + <strong>$6.95 shipping</strong></td>
       </tr>
 
       <!-- Monthly Subscription -->
-      <tr class="pricing-card" style="background:#fbfdff; border:2px solid #9dc6f0; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.04);">
-        <td data-label="Plan Type" style="padding:16px; font-weight:600;">Monthly Subscription</td>
-        <td data-label="Discount" style="padding:16px; color:#0068b4;"><strong>10% OFF</strong></td>
-        <td data-label="Original" style="padding:16px;">$88 / mo</td>
-        <td data-label="You Pay" style="padding:16px;"><strong>$79 / mo</strong></td>
-        <td data-label="Details" style="padding:16px;">Billed monthly • <strong>Free shipping</strong></td>
+      <tr class="card blue-card">
+        <td><span class="label">Monthly Subscription</span></td>
+        <td><strong>10% OFF</strong></td>
+        <td>$88 / mo</td>
+        <td><strong>$79 / mo</strong></td>
+        <td>Billed monthly • <strong>Free shipping</strong></td>
       </tr>
 
       <!-- 3-Month Delivery -->
-      <tr class="pricing-card" style="background:#f9fefb; border:2px solid #8fd3b4; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.05);">
-        <td data-label="Plan Type" style="padding:16px; font-weight:600;">3-Month Delivery Plan</td>
-        <td data-label="Discount" style="padding:16px; color:#00a36d;"><strong>15% OFF</strong></td>
-        <td data-label="Original" style="padding:16px;">$264 total</td>
-        <td data-label="You Pay" style="padding:16px;">
-          <strong>$224</strong><br><span style="color:#666; font-size:14px;">Billed upfront (~$74.80/mo)</span>
+      <tr class="card green-card">
+        <td><span class="label">3-Month Delivery Plan</span></td>
+        <td><strong>15% OFF</strong></td>
+        <td>$264 total</td>
+        <td>
+          <strong>$224</strong><br>
+          <span class="subtext">Billed upfront (~$74.80/mo)</span>
         </td>
-        <td data-label="Details" style="padding:16px;">Every 3 months • <strong>Free shipping</strong></td>
+        <td>Every 3 months • <strong>Free shipping</strong></td>
       </tr>
 
       <!-- 6-Month Delivery -->
-      <tr class="pricing-card" style="background:#fffdf7; border:2px solid #f3d67b; border-radius:10px; box-shadow:0 3px 7px rgba(0,0,0,0.05);">
-        <td data-label="Plan Type" style="padding:16px; font-weight:600;">6-Month Delivery Plan <span style="color:#d4a017;">⭐ Best Value</span></td>
-        <td data-label="Discount" style="padding:16px; color:#c59a00;"><strong>20% OFF</strong></td>
-        <td data-label="Original" style="padding:16px;">$528 total</td>
-        <td data-label="You Pay" style="padding:16px;">
-          <strong>$422</strong><br><span style="color:#666; font-size:14px;">Billed upfront (~$70.40/mo)</span>
+      <tr class="card gold-card">
+        <td><span class="label">6-Month Delivery Plan <span class="badge">⭐ Best Value</span></span></td>
+        <td><strong>20% OFF</strong></td>
+        <td>$528 total</td>
+        <td>
+          <strong>$422</strong><br>
+          <span class="subtext">Billed upfront (~$70.40/mo)</span>
         </td>
-        <td data-label="Details" style="padding:16px;">Every 6 months • <strong>Free shipping</strong></td>
+        <td>Every 6 months • <strong>Free shipping</strong></td>
       </tr>
 
     </tbody>
@@ -583,39 +585,87 @@
   store as of October 2025. Offers and availability may vary by region or promotional period.*</em>
 </p>
 
-<!-- 📱 Mobile Responsive Table Style -->
 <style>
-@media (max-width: 640px) {
-  .rtable.rtable-nutrafol thead { display: none; }
-  .rtable.rtable-nutrafol,
-  .rtable.rtable-nutrafol tbody,
-  .rtable.rtable-nutrafol tr,
-  .rtable.rtable-nutrafol td {
+/* 🌿 Table base */
+.pricing-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+  font-size: 15px;
+  color: #333;
+}
+.pricing-table thead {
+  background: #f6f6f6;
+  font-weight: 600;
+  color: #333;
+}
+.pricing-table th {
+  text-align: left;
+  padding: 14px;
+}
+.pricing-table td {
+  padding: 16px;
+  border-top: 1px dashed #e0e0e0;
+}
+.pricing-table tr.card {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pricing-table tr.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.pricing-table .label {
+  font-weight: 700;
+  font-size: 1.05em;
+  color: #222;
+}
+.pricing-table .subtext {
+  font-size: 0.9em;
+  color: #666;
+}
+.pricing-table .badge {
+  color: #d4a017;
+  font-weight: 600;
+}
+
+/* 🌈 Card color themes */
+.grey-card { border: 2px solid #d9d9d9; background: #fcfcfc; }
+.blue-card { border: 2px solid #bcd9f3; background: #f9fbfe; }
+.green-card { border: 2px solid #bce5cd; background: #f9fefb; }
+.gold-card { border: 2px solid #f4e0a3; background: #fffef8; }
+
+/* 📱 Responsive Layout */
+@media (max-width: 720px) {
+  .pricing-table thead { display: none; }
+  .pricing-table,
+  .pricing-table tbody,
+  .pricing-table tr,
+  .pricing-table td {
     display: block;
     width: 100%;
   }
-  .rtable.rtable-nutrafol tr {
+  .pricing-table tr {
     margin-bottom: 16px;
-    border-radius: 12px;
     padding: 12px 16px;
   }
-  .rtable.rtable-nutrafol td {
-    padding: 6px 0;
+  .pricing-table td {
+    border-top: 1px dashed #ddd;
+    padding: 8px 0;
   }
-  .rtable.rtable-nutrafol td::before {
+  .pricing-table td::before {
     content: attr(data-label);
     font-weight: 600;
     display: block;
+    color: #444;
     margin-bottom: 4px;
-    color: #111;
   }
-  .rtable.rtable-nutrafol td + td {
-    border-top: 1px dashed #eee;
-    margin-top: 6px;
-    padding-top: 10px;
-  }
+  .pricing-table td:first-child { border-top: none; }
 }
 </style>
+
 
 
 
