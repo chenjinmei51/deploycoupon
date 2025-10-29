@@ -99,104 +99,7 @@
 }
 </script>
 
-
-		<!-- ✅ Responsive Table (Card Style on Mobile) -->
-<style>
-/* ========== 基础表格保护 ========== */
-.table-responsive {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-table.responsive-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-table.responsive-table th,
-table.responsive-table td {
-  word-break: break-word;
-  word-wrap: break-word;
-  vertical-align: top;
-}
-/* ========== 桌面端维持原貌 ========== */
-@media (min-width: 769px) {
-  table.responsive-table {
-    display: table;
-  }
-}
-/* ========== 手机端卡片式布局 ========== */
-@media (max-width: 768px) {
-  table.responsive-table {
-    border: 0;
-  }
-  table.responsive-table thead {
-    display: none;
-  }
-  table.responsive-table tbody tr {
-    display: block;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    background: #fff;
-    padding: 12px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  }
-  table.responsive-table tbody td {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border: none !important;
-    padding: 8px 0 !important;
-  }
-  table.responsive-table tbody td + td {
-    border-top: 1px dashed #eee !important;
-    padding-top: 10px !important;
-    margin-top: 8px;
-  }
-  table.responsive-table tbody td::before {
-    content: attr(data-label);
-    font-weight: 600;
-    flex: 0 0 45%;
-    color: #111827;
-    text-align: left;
-  }
-  table.responsive-table tbody td > * {
-    flex: 1 1 auto;
-    text-align: right;
-    color: #333;
-  }
-  table.responsive-table tbody td br {
-    display: block;
-    margin: 4px 0;
-  }
-}
-</style>
-
-<script>
-// ✅ 自动注入 data-label（根据表头）
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('table.responsive-table').forEach(function(table) {
-    const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim());
-    table.querySelectorAll('tbody tr').forEach(tr => {
-      Array.from(tr.children).forEach((td, i) => {
-        if (!td.getAttribute('data-label') && headers[i]) {
-          td.setAttribute('data-label', headers[i]);
-        }
-      });
-    });
-  });
-});
-</script>
-
-
-
-
-
-		
-		
-		
-		
+	
 		
 	</head>
 	<body class="is-preload">
@@ -810,74 +713,88 @@ If you’re researching <strong>Nutrafol for Men</strong>, you’re likely explo
 <!-- ====================== SECTION: Nutrafol for Men vs Other Hair Growth Solutions ====================== -->
 <h2>Nutrafol Men vs Other Hair Growth Solutions (Comparison &amp; Alternatives)</h2>
 
+<!-- ====================== SECTION: Nutrafol for Men vs Other Hair Growth Solutions ====================== -->
+<h2>Nutrafol Men vs Other Hair Growth Solutions (Comparison &amp; Alternatives)</h2>
+
 <p>
   Choosing the right hair growth solution depends on how advanced your thinning is and whether you prefer a natural supplement or a medical treatment. 
   Below is a side-by-side comparison between <strong>Nutrafol Men</strong> and other leading solutions like <strong>Rogaine</strong>, <strong>Keeps</strong>, and <strong>Viviscal</strong>.
 </p>
 
-<!-- Comparison Table -->
-<table style="width:100%; border-collapse:collapse; margin:25px 0; font-size:15px;">
-  <thead>
-    <tr style="background-color:#f2f5f7;">
-      <th style="padding:12px; border:1px solid #ddd;">Product</th>
-      <th style="padding:12px; border:1px solid #ddd;">Type</th>
-      <th style="padding:12px; border:1px solid #ddd;">Contains Drug?</th>
-      <th style="padding:12px; border:1px solid #ddd;">How It Works</th>
-      <th style="padding:12px; border:1px solid #ddd;">Best For</th>
-      <th style="padding:12px; border:1px solid #ddd;">Key Pros / Cons</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding:12px; border:1px solid #ddd;"><strong>Nutrafol Men (from the Nutrafol for Men line)</strong></td>
-      <td style="padding:12px; border:1px solid #ddd;">Nutraceutical supplement</td>
-      <td style="padding:12px; border:1px solid #ddd;">❌ No</td>
-      <td style="padding:12px; border:1px solid #ddd;">Targets DHT, stress, and inflammation using plant-based adaptogens and vitamins.</td>
-      <td style="padding:12px; border:1px solid #ddd;">Men with early-to-moderate thinning who prefer a drug-free, holistic solution.</td>
-      <td style="padding:12px; border:1px solid #ddd;">
-        ✅ Clinically tested natural formula<br>
-        ✅ Addresses internal causes of hair loss<br>
-        ⚠️ Results may take 3–6 months
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:12px; border:1px solid #ddd;"><strong>Rogaine (Minoxidil)</strong></td>
-      <td style="padding:12px; border:1px solid #ddd;">Topical treatment</td>
-      <td style="padding:12px; border:1px solid #ddd;">✔️ Yes (Minoxidil)</td>
-      <td style="padding:12px; border:1px solid #ddd;">Stimulates blood flow to hair follicles to promote growth.</td>
-      <td style="padding:12px; border:1px solid #ddd;">Men with mild to moderate thinning, especially at the crown area.</td>
-      <td style="padding:12px; border:1px solid #ddd;">
-        ✅ Proven FDA-approved ingredient<br>
-        ⚠️ Must be used indefinitely<br>
-        ⚠️ Possible scalp irritation or shedding at start
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:12px; border:1px solid #ddd;"><strong>Keeps</strong></td>
-      <td style="padding:12px; border:1px solid #ddd;">Prescription plan (Finasteride + Minoxidil)</td>
-      <td style="padding:12px; border:1px solid #ddd;">✔️ Yes (Drugs)</td>
-      <td style="padding:12px; border:1px solid #ddd;">Combines DHT-blocking medication (Finasteride) with Minoxidil for topical stimulation.</td>
-      <td style="padding:12px; border:1px solid #ddd;">Men with genetic pattern baldness looking for medical-grade treatment.</td>
-      <td style="padding:12px; border:1px solid #ddd;">
-        ✅ Effective for hereditary hair loss<br>
-        ⚠️ Requires doctor approval<br>
-        ⚠️ Possible sexual side effects (Finasteride)
-      </td>
-    </tr>
-    <tr>
-      <td style="padding:12px; border:1px solid #ddd;"><strong>Viviscal for Men</strong></td>
-      <td style="padding:12px; border:1px solid #ddd;">Protein-based supplement</td>
-      <td style="padding:12px; border:1px solid #ddd;">❌ No</td>
-      <td style="padding:12px; border:1px solid #ddd;">Uses AminoMar™ marine complex to nourish hair follicles and support growth.</td>
-      <td style="padding:12px; border:1px solid #ddd;">Men with thinning caused by poor diet or stress; good entry-level supplement.</td>
-      <td style="padding:12px; border:1px solid #ddd;">
-        ✅ Gentle, drug-free option<br>
-        ⚠️ Slower results (usually after 6+ months)<br>
-        ⚠️ May not address hormonal causes
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive" style="margin-top:20px;">
+  <table class="responsive-table comparison-table" style="width:100%; border-collapse:collapse; font-size:15px;">
+    <thead>
+      <tr style="background-color:#f2f5f7;">
+        <th>Product</th>
+        <th>Type</th>
+        <th>Contains Drug?</th>
+        <th>How It Works</th>
+        <th>Best For</th>
+        <th>Key Pros / Cons</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Nutrafol Men -->
+      <tr class="card grey-card">
+        <td data-label="Product"><strong>Nutrafol Men (from the Nutrafol for Men line)</strong></td>
+        <td data-label="Type">Nutraceutical supplement</td>
+        <td data-label="Contains Drug?">❌ No</td>
+        <td data-label="How It Works">Targets DHT, stress, and inflammation using plant-based adaptogens and vitamins.</td>
+        <td data-label="Best For">Men with early-to-moderate thinning who prefer a drug-free, holistic solution.</td>
+        <td data-label="Key Pros / Cons">
+          ✅ Clinically tested natural formula<br>
+          ✅ Addresses internal causes of hair loss<br>
+          ⚠️ Results may take 3–6 months
+        </td>
+      </tr>
+
+      <!-- Rogaine -->
+      <tr class="card blue-card">
+        <td data-label="Product"><strong>Rogaine (Minoxidil)</strong></td>
+        <td data-label="Type">Topical treatment</td>
+        <td data-label="Contains Drug?">✔️ Yes (Minoxidil)</td>
+        <td data-label="How It Works">Stimulates blood flow to hair follicles to promote growth.</td>
+        <td data-label="Best For">Men with mild to moderate thinning, especially at the crown area.</td>
+        <td data-label="Key Pros / Cons">
+          ✅ Proven FDA-approved ingredient<br>
+          ⚠️ Must be used indefinitely<br>
+          ⚠️ Possible scalp irritation or shedding at start
+        </td>
+      </tr>
+
+      <!-- Keeps -->
+      <tr class="card green-card">
+        <td data-label="Product"><strong>Keeps</strong></td>
+        <td data-label="Type">Prescription plan (Finasteride + Minoxidil)</td>
+        <td data-label="Contains Drug?">✔️ Yes (Drugs)</td>
+        <td data-label="How It Works">Combines DHT-blocking medication (Finasteride) with Minoxidil for topical stimulation.</td>
+        <td data-label="Best For">Men with genetic pattern baldness looking for medical-grade treatment.</td>
+        <td data-label="Key Pros / Cons">
+          ✅ Effective for hereditary hair loss<br>
+          ⚠️ Requires doctor approval<br>
+          ⚠️ Possible sexual side effects (Finasteride)
+        </td>
+      </tr>
+
+      <!-- Viviscal -->
+      <tr class="card gold-card">
+        <td data-label="Product"><strong>Viviscal for Men</strong></td>
+        <td data-label="Type">Protein-based supplement</td>
+        <td data-label="Contains Drug?">❌ No</td>
+        <td data-label="How It Works">Uses AminoMar™ marine complex to nourish hair follicles and support growth.</td>
+        <td data-label="Best For">Men with thinning caused by poor diet or stress; good entry-level supplement.</td>
+        <td data-label="Key Pros / Cons">
+          ✅ Gentle, drug-free option<br>
+          ⚠️ Slower results (usually after 6+ months)<br>
+          ⚠️ May not address hormonal causes
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
 
 <!-- Comparative Summary -->
 <p>
