@@ -205,7 +205,101 @@
   <em>📅 Last updated: Oct 20, 2025</em>
 </p>
 
-										
+						<script type="application/ld+json">
+{ ... 你的 JSON-LD 结构化数据 ... }
+</script>
+
+<!-- ✅ Responsive Table (Card Style on Mobile) -->
+<style>
+/* ========== 基础表格保护 ========== */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+table.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+table.responsive-table th,
+table.responsive-table td {
+  word-break: break-word;
+  word-wrap: break-word;
+  vertical-align: top;
+}
+/* ========== 桌面端维持原貌 ========== */
+@media (min-width: 769px) {
+  table.responsive-table {
+    display: table;
+  }
+}
+/* ========== 手机端卡片式布局 ========== */
+@media (max-width: 768px) {
+  table.responsive-table {
+    border: 0;
+  }
+  table.responsive-table thead {
+    display: none;
+  }
+  table.responsive-table tbody tr {
+    display: block;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  table.responsive-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: none !important;
+    padding: 8px 0 !important;
+  }
+  table.responsive-table tbody td + td {
+    border-top: 1px dashed #eee !important;
+    padding-top: 10px !important;
+    margin-top: 8px;
+  }
+  table.responsive-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    flex: 0 0 45%;
+    color: #111827;
+    text-align: left;
+  }
+  table.responsive-table tbody td > * {
+    flex: 1 1 auto;
+    text-align: right;
+    color: #333;
+  }
+  table.responsive-table tbody td br {
+    display: block;
+    margin: 4px 0;
+  }
+}
+</style>
+
+<script>
+// ✅ 自动注入 data-label（根据表头）
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('table.responsive-table').forEach(function(table) {
+    const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim());
+    table.querySelectorAll('tbody tr').forEach(tr => {
+      Array.from(tr.children).forEach((td, i) => {
+        if (!td.getAttribute('data-label') && headers[i]) {
+          td.setAttribute('data-label', headers[i]);
+        }
+      });
+    });
+  });
+});
+</script>
+
+</head>
+				
 									</header>
 
 <span class="image main"><img src="/images/brand/nutrafol/nutrafol-for-men.png" alt="nutrafol for men" /></span>
